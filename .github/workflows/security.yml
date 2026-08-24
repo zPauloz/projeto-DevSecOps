@@ -31,7 +31,7 @@ jobs:
 
       - name: Análise de segurança com Bandit
         run: |
-          bandit -r .
+          bandit -r . -x ./venv
 
       - name: Verificar vulnerabilidades
         run: |
